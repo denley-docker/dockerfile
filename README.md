@@ -32,4 +32,4 @@ docker push denley/ubuntu:<tag_name>
  docker run -d -p 1979:1979 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1979 -k password -m aes-256-cfb
 ```
 
-* 如果没有翻墙，打开L4-L5之间的注释行
+* 如果没有翻墙，打开Dockerfile的L4-L5注释即可加速build
