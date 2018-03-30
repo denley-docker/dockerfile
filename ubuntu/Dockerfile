@@ -20,3 +20,12 @@ SHELL ["/bin/bash", "-c"]
 # 配置git
 RUN git config --global user.name "Denley Hsiao" \
   && git config --global user.email "denley@justtdodo.com"
+
+# 安装brew
+RUN mkdir -p /home/denley/.linuxbrew \
+  && chown -R denley: /home/denley/.linuxbrew \
+  && cd /home/denley/.linuxbrew \
+  && git clone https://github.com/Linuxbrew/brew.git
+
+ENV PATH=/home/denley/.linuxbrew/brew/bin:$PATH \
+  LD_LIBRARY_PATH=/home/denley/.linuxbrew/brew/lib:$LD_LIBRARY_PATH
