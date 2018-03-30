@@ -19,6 +19,7 @@
   
 # 注意
 * 如果没有翻墙，打开[Dockerfile](ubuntu/Dockerfile)文件中的`更新源`部分注释即可加速build，缺省注释掉
+* 如手动push到hub.docker.com, 要先执行`docker login`
 
 # 参考
 * [mritd的常用dockerfile](https://github.com/mritd/dockerfile)
