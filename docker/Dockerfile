@@ -1,4 +1,4 @@
-FROM denley/ubuntu:base
+FROM denley/ubuntu
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
 # 安装docker/docker-compose
