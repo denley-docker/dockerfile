@@ -16,10 +16,25 @@
 |  |  | tensorflow_src |[说明](python/tensorflow_src/README.md)|
 
 注：带"<font color="red">*</font>"的docker镜像（包括其子孙镜像）需要在系统run后执行`source ~/.bash_profile`
+
+# 使用
+```shell
+ # 构建
+ docker build -t denley/<proj_name>:<tag_name> .
+
+ # 运行
+ docker run -it denley/<proj_name>:<tag_name> bash
+
+ # 上传 
+ docker login
+ docker push denley/<proj_name>:<tag_name>
+
+ # 下载
+ docker pull denley/<proj_name>:<tag_name>
+```
   
 # 注意
 * 如果没有翻墙，打开[Dockerfile](ubuntu/Dockerfile)文件中的`更新源`部分注释即可加速build，缺省注释掉
-* 如果手动push到hub.docker.com, 要先执行`docker login`
 * 使用[镜像加速器](https://www.daocloud.io/mirror#accelerator-doc): http://39e5c26c.m.daocloud.io, 加快下载速度
 
 # 参考
