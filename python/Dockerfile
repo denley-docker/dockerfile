@@ -1,6 +1,9 @@
 FROM denley/ubuntu
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
+RUN sudo apt-get update \
+  && sudo apt-get install -y build-essential make g++ libssl-dev libreadline-dev libsqlite3-dev file uuid-runtime
+
 # 安装pyenv & python
 RUN curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash -s table \
   && echo 'export PYENV_ROOT="$HOME/.pyenv"' >> $HOME/.bash_profile \
