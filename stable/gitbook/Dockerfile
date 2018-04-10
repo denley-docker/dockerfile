@@ -1,4 +1,4 @@
-FROM billryan/gitbook
+FROM ucalgary/gitbook
 
 ENV APP_DIR $HOME/app
 RUN mkdir -p $APP_DIR
