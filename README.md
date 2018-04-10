@@ -1,21 +1,28 @@
-个人容器环境, 内容包括：
+个人容器集合
+
+# 说明
+## 开发环境
+位于`dev`目录下，主要用于开发环境，为了支持各版本自由切换，体积可能比较大， 使用时加前缀`dev_`, 如`rails`所在的镜像为：`denley/dev_rails`: 
 
 | 主 | 子 | 孙 | 其它 |
 |:---:|:---:|:---:|---|
-| full |  | |合并所有，除tensorflow_src外 <font color="red">*</font>|
-| .|  |  |[说明](ubuntu/README.md)|
-|  | docker |  |[说明](docker/README.md) |
-|  | ruby |  |[说明](ruby/README.md) <font color="red">*</font>|
-|  |  | rails |[说明](rails/README.md) |
-|  | nodejs |  |[说明](nodejs/README.md)|
-|  |  | gitbook |[说明](gitbook/README.md)|
-|  |  | hexo |[说明](hexo/README.md)|
-|  | python |  |[说明](python/README.md) <font color="red">*</font>|
-|  |  | notebook |[说明](notebook/README.md)|
-|  |  | tensorflow |[说明](tensorflow/README.md)|
-|  |  | tensorflow_src |[说明](tensorflow_src/README.md)|
+|full |  | |合并所有，除tensorflow_src外 <font color="red">*</font>|
+|ubuntu|  |  |[说明](dev/ubuntu/README.md)|
+|  | docker |  |[说明](dev/docker/README.md) |
+|  | ruby |  |[说明](dev/ruby/README.md) <font color="red">*</font>|
+|  |  | rails |[说明](dev/rails/README.md) |
+|  | nodejs |  |[说明](dev/nodejs/README.md)|
+|  |  | gitbook |[说明](dev/gitbook/README.md)|
+|  |  | hexo |[说明](dev/hexo/README.md)|
+|  | python |  |[说明](dev/python/README.md) <font color="red">*</font>|
+|  |  | notebook |[说明](dev/notebook/README.md)|
+|  |  | tensorflow |[说明](dev/tensorflow/README.md)|
+|  |  | tensorflow_src |[说明](dev/tensorflow_src/README.md)|
 
-注：带"<font color="red">*</font>"的docker镜像（包括其子孙镜像）需要在系统run后执行`source ~/.bash_profile`
+注: 带"<font color="red">*</font>"的docker镜像（包括其子孙镜像）需要在系统run后执行`source ~/.bash_profile`
+
+## 生产环境
+位于`stable`目录下，主要用于生产环境，一般体积比较小，方便部署，使用时形如：`denley/rails`
 
 # 使用
 ```shell

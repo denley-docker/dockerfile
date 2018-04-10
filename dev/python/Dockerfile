@@ -1,4 +1,4 @@
-FROM denley/ubuntu
+FROM denley/dev_ubuntu
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
 RUN sudo apt-get update \

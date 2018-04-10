@@ -1,4 +1,4 @@
-FROM denley/ruby
+FROM denley/dev_ruby
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
 # 安装rails

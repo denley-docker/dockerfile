@@ -1,4 +1,4 @@
-FROM denley/python
+FROM denley/dev_python
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
 RUN source $HOME/.bash_profile \ 
