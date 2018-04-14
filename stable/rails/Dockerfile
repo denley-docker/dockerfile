@@ -9,7 +9,7 @@ WORKDIR $APP_DIR
 
 ONBUILD COPY . $APP_DIR
 ONBUILD RUN bundle install --jobs 20 --retry 5 --without development test \
-  && rails assets:precompile RAILS_ENV=production
+  && rake assets:precompile RAILS_ENV=production
 
 ENTRYPOINT ["rails"]
 CMD ["s", "-b", "0.0.0.0", "-p", "3000", "-e", "production"]
