@@ -1,4 +1,4 @@
-FROM guildeducation/rails
+FROM guildeducation/rails:2.4.2-9.11.1
 
 RUN apt-get update \
   && apt-get install -y libpq-dev
