@@ -12,16 +12,15 @@
  # 运行
  docker run -it denley/<proj_name>:<tag_name> bash
 
- # 上传 
+ # 上传
  docker login
  docker push denley/<proj_name>:<tag_name>
 
  # 下载
  docker pull denley/<proj_name>:<tag_name>
 ```
-  
+
 # 注意
-* 如果没有翻墙，打开[Dockerfile](ubuntu/Dockerfile)文件中的`更新源`部分注释即可加速build
 * 使用[镜像加速器](https://www.daocloud.io/mirror#accelerator-doc): http://39e5c26c.m.daocloud.io, 加快下载速度
 
 # 参考
